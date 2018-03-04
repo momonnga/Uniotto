@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mogamusa.uniottoparty.TopActivity">
+
+    <RelativeLayout
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/button_create"
+            android:layout_width="280dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/button_enter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:background="#696969"
+            android:paddingLeft="45dp"
+            android:text="グループを作る"
+            android:textColor="@android:color/white"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/button_enter"
+            android:layout_width="280dp"
+            android:layout_height="90dp"
+            android:layout_alignLeft="@+id/button_create"
+            android:layout_alignStart="@+id/button_create"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="36dp"
+            android:background="#696969"
+            android:paddingLeft="45dp"
+            android:text="グループに入る"
+            android:textColor="@android:color/white"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="196dp"
+            android:text="友達と音楽を聴く"
+            android:textColor="@android:color/black"
+            android:textSize="28sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/button_enter"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_marginBottom="16dp"
+            android:translationZ="2dp"
+            app:srcCompat="@drawable/icon_149642_256" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/button_create"
+            android:layout_alignEnd="@+id/imageView3"
+            android:layout_alignRight="@+id/imageView3"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:translationZ="2dp"
+            app:srcCompat="@drawable/make_goup" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="500dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            app:srcCompat="@drawable/title_logo" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

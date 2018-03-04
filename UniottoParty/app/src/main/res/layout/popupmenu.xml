@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/union"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <Button
+            android:id="@+id/close_button_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Close" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/close_button_bar"
+            android:layout_toStartOf="@+id/close_button_bar"
+            android:text="RoomID："
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/roomid_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView15"
+            android:layout_alignBottom="@+id/textView15"
+            android:layout_marginStart="19dp"
+            android:layout_toEndOf="@+id/textView15"
+            android:text="ididididididi"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/close_button_bar"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/roomid_bar"
+            app:srcCompat="?attr/actionModeCopyDrawable" />
+
+        <ImageView
+            android:id="@+id/union_qr_bar"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@color/common_google_signin_btn_text_dark_disabled" />
+    </RelativeLayout>
+</LinearLayout>

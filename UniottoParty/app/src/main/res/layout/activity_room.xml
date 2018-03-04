@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mogamusa.uniottoparty.RoomActivity">
+
+    <RelativeLayout
+        android:id="@+id/fullscreen_content"
+        android:layout_width="374dp"
+        android:layout_height="498dp"
+        android:layout_marginTop="9dp"
+        android:focusableInTouchMode="true"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="4dp">
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@+id/name"
+            android:layout_alignBottom="@+id/name"
+            android:layout_toEndOf="@+id/textView2"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="masa1" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="18dp"
+            android:layout_toStartOf="@+id/start"
+            android:text="ユーザ名："
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="スタート"
+            android:layout_alignBaseline="@+id/button_read_qr"
+            android:layout_alignBottom="@+id/button_read_qr"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/editName"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="room22" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_alignStart="@+id/name"
+            android:layout_below="@+id/editName"
+            android:text="部屋名："
+            android:textSize="24sp" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:footerDividersEnabled="true"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView"
+            android:text="ルーム一覧"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_read_qr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QR"
+            android:layout_marginBottom="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="22dp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
